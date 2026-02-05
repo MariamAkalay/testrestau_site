@@ -12,7 +12,7 @@ export default function Home() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToMenu = (category) => {
+  const scrollToMenu = (category: string) => {
     setSelectedCategory(category);
     menuRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
